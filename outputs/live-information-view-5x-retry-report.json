@@ -1,0 +1,729 @@
+{
+  "provenance": "live_evaluation",
+  "totalRuns": 60,
+  "scenarioCount": 6,
+  "overall": {
+    "runs": 60,
+    "validInitialComparisons": 60,
+    "classifications": {
+      "decision_disagreement": 21,
+      "condition_disagreement": 0,
+      "incorrect_consensus": 2,
+      "operational_failure": 0,
+      "correct_consensus": 37
+    },
+    "materialDisagreements": 21,
+    "materialDisagreementRate": 0.35,
+    "decisionPairs": {
+      "ESCALATE|REJECT": 10,
+      "REJECT|REJECT": 10,
+      "ESCALATE|ESCALATE": 22,
+      "ESCALATE|APPROVE": 11,
+      "APPROVE|APPROVE": 7
+    },
+    "verificationOutcomes": {
+      "APPROVE": 20,
+      "REJECT": 20,
+      "ESCALATE": 20
+    },
+    "arbitration": {
+      "invoked": 21,
+      "successful": 21,
+      "correctDecisions": 20,
+      "conservativeEscalations": 1,
+      "incorrectDecisions": 0,
+      "policyAccuracy": 0.9523809523809523
+    },
+    "latency": {
+      "totalMs": 814827,
+      "averageMs": 13580.45
+    },
+    "tokenUsage": {
+      "totalTokens": 118230,
+      "averageTokens": 1970.5
+    }
+  },
+  "scenarios": [
+    {
+      "scenarioId": "S15",
+      "expectedPolicyVerdict": "REJECT",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 5,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 0,
+        "operational_failure": 0,
+        "correct_consensus": 5
+      },
+      "materialDisagreements": 5,
+      "materialDisagreementRate": 0.5,
+      "decisionPairs": {
+        "ESCALATE|REJECT": 5,
+        "REJECT|REJECT": 5
+      },
+      "verificationOutcomes": {
+        "APPROVE": 0,
+        "REJECT": 10,
+        "ESCALATE": 0
+      },
+      "arbitration": {
+        "invoked": 5,
+        "successful": 5,
+        "correctDecisions": 5,
+        "conservativeEscalations": 0,
+        "incorrectDecisions": 0,
+        "policyAccuracy": 1
+      },
+      "latency": {
+        "totalMs": 140028,
+        "averageMs": 14002.8
+      },
+      "tokenUsage": {
+        "totalTokens": 20984,
+        "averageTokens": 2098.4
+      }
+    },
+    {
+      "scenarioId": "S16",
+      "expectedPolicyVerdict": "ESCALATE",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 0,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 0,
+        "operational_failure": 0,
+        "correct_consensus": 10
+      },
+      "materialDisagreements": 0,
+      "materialDisagreementRate": 0,
+      "decisionPairs": {
+        "ESCALATE|ESCALATE": 10
+      },
+      "verificationOutcomes": {
+        "APPROVE": 0,
+        "REJECT": 0,
+        "ESCALATE": 10
+      },
+      "arbitration": {
+        "invoked": 0,
+        "successful": 0,
+        "correctDecisions": 0,
+        "conservativeEscalations": 0,
+        "incorrectDecisions": 0,
+        "policyAccuracy": null
+      },
+      "latency": {
+        "totalMs": 95429,
+        "averageMs": 9542.9
+      },
+      "tokenUsage": {
+        "totalTokens": 14894,
+        "averageTokens": 1489.4
+      }
+    },
+    {
+      "scenarioId": "S17",
+      "expectedPolicyVerdict": "APPROVE",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 6,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 2,
+        "operational_failure": 0,
+        "correct_consensus": 2
+      },
+      "materialDisagreements": 6,
+      "materialDisagreementRate": 0.6,
+      "decisionPairs": {
+        "ESCALATE|APPROVE": 6,
+        "APPROVE|APPROVE": 2,
+        "ESCALATE|ESCALATE": 2
+      },
+      "verificationOutcomes": {
+        "APPROVE": 10,
+        "REJECT": 0,
+        "ESCALATE": 0
+      },
+      "arbitration": {
+        "invoked": 6,
+        "successful": 6,
+        "correctDecisions": 5,
+        "conservativeEscalations": 1,
+        "incorrectDecisions": 0,
+        "policyAccuracy": 0.8333333333333334
+      },
+      "latency": {
+        "totalMs": 184703,
+        "averageMs": 18470.3
+      },
+      "tokenUsage": {
+        "totalTokens": 23989,
+        "averageTokens": 2398.9
+      }
+    },
+    {
+      "scenarioId": "S18",
+      "expectedPolicyVerdict": "ESCALATE",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 0,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 0,
+        "operational_failure": 0,
+        "correct_consensus": 10
+      },
+      "materialDisagreements": 0,
+      "materialDisagreementRate": 0,
+      "decisionPairs": {
+        "ESCALATE|ESCALATE": 10
+      },
+      "verificationOutcomes": {
+        "APPROVE": 0,
+        "REJECT": 0,
+        "ESCALATE": 10
+      },
+      "arbitration": {
+        "invoked": 0,
+        "successful": 0,
+        "correctDecisions": 0,
+        "conservativeEscalations": 0,
+        "incorrectDecisions": 0,
+        "policyAccuracy": null
+      },
+      "latency": {
+        "totalMs": 93167,
+        "averageMs": 9316.7
+      },
+      "tokenUsage": {
+        "totalTokens": 14865,
+        "averageTokens": 1486.5
+      }
+    },
+    {
+      "scenarioId": "S19",
+      "expectedPolicyVerdict": "REJECT",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 5,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 0,
+        "operational_failure": 0,
+        "correct_consensus": 5
+      },
+      "materialDisagreements": 5,
+      "materialDisagreementRate": 0.5,
+      "decisionPairs": {
+        "ESCALATE|REJECT": 5,
+        "REJECT|REJECT": 5
+      },
+      "verificationOutcomes": {
+        "APPROVE": 0,
+        "REJECT": 10,
+        "ESCALATE": 0
+      },
+      "arbitration": {
+        "invoked": 5,
+        "successful": 5,
+        "correctDecisions": 5,
+        "conservativeEscalations": 0,
+        "incorrectDecisions": 0,
+        "policyAccuracy": 1
+      },
+      "latency": {
+        "totalMs": 181247,
+        "averageMs": 18124.7
+      },
+      "tokenUsage": {
+        "totalTokens": 23957,
+        "averageTokens": 2395.7
+      }
+    },
+    {
+      "scenarioId": "S20",
+      "expectedPolicyVerdict": "APPROVE",
+      "runs": 10,
+      "validInitialComparisons": 10,
+      "classifications": {
+        "decision_disagreement": 5,
+        "condition_disagreement": 0,
+        "incorrect_consensus": 0,
+        "operational_failure": 0,
+        "correct_consensus": 5
+      },
+      "materialDisagreements": 5,
+      "materialDisagreementRate": 0.5,
+      "decisionPairs": {
+        "ESCALATE|APPROVE": 5,
+        "APPROVE|APPROVE": 5
+      },
+      "verificationOutcomes": {
+        "APPROVE": 10,
+        "REJECT": 0,
+        "ESCALATE": 0
+      },
+      "arbitration": {
+        "invoked": 5,
+        "successful": 5,
+        "correctDecisions": 5,
+        "conservativeEscalations": 0,
+        "incorrectDecisions": 0,
+        "policyAccuracy": 1
+      },
+      "latency": {
+        "totalMs": 120253,
+        "averageMs": 12025.3
+      },
+      "tokenUsage": {
+        "totalTokens": 19541,
+        "averageTokens": 1954.1
+      }
+    }
+  ],
+  "informationView": {
+    "records": 60,
+    "pairs": 30,
+    "attributionCounts": {
+      "access_associated": 19,
+      "persistent_across_arms": 1,
+      "control_only": 0,
+      "no_decision_disagreement": 10,
+      "unclassifiable_operational_failure": 0
+    },
+    "pairAnalysis": [
+      {
+        "pairId": "pair-S15-1-00437061-9b9c-47ec-8daf-9baf6eb2654c",
+        "scenarioId": "S15",
+        "repeatIndex": 1,
+        "attribution": "access_associated",
+        "asymmetricRunId": "8b54402a-f682-49e8-89bc-f27526e66b33",
+        "fullInformationRunId": "de7d7803-bd24-49df-9eab-574ccca0b0bc",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S16-1-91c9da2f-b3a5-4408-97ee-c3b3aa72aace",
+        "scenarioId": "S16",
+        "repeatIndex": 1,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "137189b3-badf-4de1-9336-c7d6b806a22a",
+        "fullInformationRunId": "4a550565-5e86-4a86-824d-87386dd4cfad",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S17-1-e061e2d9-23a0-435e-9c20-0ff46a2e6f25",
+        "scenarioId": "S17",
+        "repeatIndex": 1,
+        "attribution": "persistent_across_arms",
+        "asymmetricRunId": "3b94c158-7900-4d69-b4fb-2fd4d456c7b0",
+        "fullInformationRunId": "25c9c8c9-72c8-4a02-8946-728559c8b069",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "decision_mismatch"
+      },
+      {
+        "pairId": "pair-S18-1-f6d99130-5cad-4ffd-a075-cee53589274d",
+        "scenarioId": "S18",
+        "repeatIndex": 1,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "19deb9b6-7537-43c2-98c8-ca903926346b",
+        "fullInformationRunId": "01840fcd-79a1-425a-acfd-c879dc3fd7d6",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S19-1-0e2ea1f0-2f06-4d8e-b58e-b45a92a69687",
+        "scenarioId": "S19",
+        "repeatIndex": 1,
+        "attribution": "access_associated",
+        "asymmetricRunId": "4433cd92-c3ce-4fb0-90ae-eda03bdb44a1",
+        "fullInformationRunId": "6184f11f-2d5b-4253-978c-8ed6525c1ea0",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S20-1-ccc69574-070b-4a43-b1c8-4170aa19070c",
+        "scenarioId": "S20",
+        "repeatIndex": 1,
+        "attribution": "access_associated",
+        "asymmetricRunId": "519dbf9d-aa04-43ba-8977-7b9c83a1084a",
+        "fullInformationRunId": "0081e904-0329-4691-8245-b0200e11716b",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S15-2-755f57c1-c2bf-4fc7-ad97-673ecaaa6fff",
+        "scenarioId": "S15",
+        "repeatIndex": 2,
+        "attribution": "access_associated",
+        "asymmetricRunId": "96c18538-3574-4307-ac51-50ad85ac4005",
+        "fullInformationRunId": "e6a43cad-f146-4c30-8ac7-326cfe4c2123",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S16-2-8855a5a0-110e-4fe0-a502-97da639a55da",
+        "scenarioId": "S16",
+        "repeatIndex": 2,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "d4530a62-0845-49bf-9ef8-6e02c51fc269",
+        "fullInformationRunId": "21cfbd60-8333-4194-8b98-7dc408f694e4",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S17-2-cd705484-3144-4268-9f32-5ccf7197c16b",
+        "scenarioId": "S17",
+        "repeatIndex": 2,
+        "attribution": "access_associated",
+        "asymmetricRunId": "2df298b2-f7fd-45fb-9ecc-1abb535dcb04",
+        "fullInformationRunId": "6562336a-6d4b-4093-aedb-66d56dbe78f9",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S18-2-c81a070d-27c4-4d70-b3e4-40fc4b734713",
+        "scenarioId": "S18",
+        "repeatIndex": 2,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "d98ca35c-ee68-4fcd-a2a1-87faf2e09576",
+        "fullInformationRunId": "0430e813-669c-46df-9227-9953c3b141a6",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S19-2-f9c50dd7-b126-48b4-9b32-4d3e62e788b5",
+        "scenarioId": "S19",
+        "repeatIndex": 2,
+        "attribution": "access_associated",
+        "asymmetricRunId": "341c1a61-c34b-4069-a86b-d127c0f084c2",
+        "fullInformationRunId": "b37a8f5f-6b51-4cee-b65f-ae5b655eda3b",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S20-2-27b7e1c5-4302-4d1d-9b3c-f4fe256e3dd5",
+        "scenarioId": "S20",
+        "repeatIndex": 2,
+        "attribution": "access_associated",
+        "asymmetricRunId": "248929a2-3df9-402f-9a97-001b0ef8afad",
+        "fullInformationRunId": "7b739255-f571-4f99-aa8a-300b320e923e",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S15-3-fc50b968-05c8-4bd3-81c4-8e34ba1f3df4",
+        "scenarioId": "S15",
+        "repeatIndex": 3,
+        "attribution": "access_associated",
+        "asymmetricRunId": "00ed5735-dd84-4622-b7ff-3c6ede34858c",
+        "fullInformationRunId": "412712f7-7ab4-4dcc-99bc-0e512f8885bd",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S16-3-25e15fc5-01b2-4837-9e55-c21c626aabc9",
+        "scenarioId": "S16",
+        "repeatIndex": 3,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "3dc7dd74-97a1-43c7-9ca6-f7ef01511853",
+        "fullInformationRunId": "c122c3de-0bdf-4b5a-ad1d-6a5796fdde17",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S17-3-50507420-fcf3-451c-b067-54b3b179ef68",
+        "scenarioId": "S17",
+        "repeatIndex": 3,
+        "attribution": "access_associated",
+        "asymmetricRunId": "1c530a2e-5734-4842-ae17-5b159f5cb77a",
+        "fullInformationRunId": "47cd7586-a81a-407e-858c-8e7c7bb9a9af",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S18-3-3f6700ce-a00d-4666-8bc1-2d6d44f1401e",
+        "scenarioId": "S18",
+        "repeatIndex": 3,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "301731ff-7614-4175-9d2c-997cfedcccdd",
+        "fullInformationRunId": "fafa0d6d-1e4f-44e9-ad4a-cacbbe1f9f89",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S19-3-2409fb85-911a-43d7-a1d9-b1ccfcb9987e",
+        "scenarioId": "S19",
+        "repeatIndex": 3,
+        "attribution": "access_associated",
+        "asymmetricRunId": "5fcc2ef5-1692-4541-bb25-4f80d8a78d26",
+        "fullInformationRunId": "15fa850c-bbdb-4c4c-a9cc-44142696a11b",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S20-3-47670f0f-0df7-462c-9e7c-4d0acc91f1a3",
+        "scenarioId": "S20",
+        "repeatIndex": 3,
+        "attribution": "access_associated",
+        "asymmetricRunId": "286e75d3-fcee-4d77-b8c3-a651675a8bb1",
+        "fullInformationRunId": "176b5034-314a-4223-ad0a-d1dc8cc810dd",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S15-4-9c666b78-437e-446c-bcd0-5b2f3df49e8b",
+        "scenarioId": "S15",
+        "repeatIndex": 4,
+        "attribution": "access_associated",
+        "asymmetricRunId": "3635eda0-69fc-41b8-ae9f-e648a5ed6086",
+        "fullInformationRunId": "ccbe5959-f257-42ca-9024-3b4d208fde39",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S16-4-494e0239-ee6c-40dc-b92d-687a6050bad1",
+        "scenarioId": "S16",
+        "repeatIndex": 4,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "e36e91c8-588b-4279-b885-16d9c943d458",
+        "fullInformationRunId": "8a3cb78d-337e-4dff-841e-c0aebd8dd507",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S17-4-41bfdd6e-fbf4-4f50-bce6-c37ebfef7a41",
+        "scenarioId": "S17",
+        "repeatIndex": 4,
+        "attribution": "access_associated",
+        "asymmetricRunId": "1746b847-45a6-4e8d-aa87-7d4af2a169fb",
+        "fullInformationRunId": "9ac1b641-f706-4a28-8f45-6c2be2f2dfe2",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S18-4-43b07def-1c57-4cb8-9a00-732352f2ecd3",
+        "scenarioId": "S18",
+        "repeatIndex": 4,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "d2ac0c59-b4d1-45d4-b6ca-d985d1c0c399",
+        "fullInformationRunId": "7e697b73-d21e-4168-8e73-499213493a9a",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S19-4-5361be3e-3d15-4070-a2a3-4609160e238a",
+        "scenarioId": "S19",
+        "repeatIndex": 4,
+        "attribution": "access_associated",
+        "asymmetricRunId": "93ed7bc6-2c11-449e-a418-e2576f03cdd1",
+        "fullInformationRunId": "ef7fb5b8-8cce-4e17-82b0-d96c1e8e57f0",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S20-4-9333eabc-fe5b-4631-bba3-c69aedbc1eb5",
+        "scenarioId": "S20",
+        "repeatIndex": 4,
+        "attribution": "access_associated",
+        "asymmetricRunId": "97e4cc41-155e-4a34-b7af-56b25073d65a",
+        "fullInformationRunId": "b32f1713-677c-42d2-be8c-2bb5ae3dc013",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S15-5-62a884bf-3efa-4862-a620-6eac62f2373b",
+        "scenarioId": "S15",
+        "repeatIndex": 5,
+        "attribution": "access_associated",
+        "asymmetricRunId": "ab47bfb3-7830-4816-84dc-91ba0e1a99e3",
+        "fullInformationRunId": "9282c454-09f2-4a11-b897-622c72d0619f",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S16-5-7cb7ad0e-4c66-4daa-a08c-d5ec23aedb68",
+        "scenarioId": "S16",
+        "repeatIndex": 5,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "fd00036b-6495-4c0f-b51d-4a08ee851bd3",
+        "fullInformationRunId": "c2c5cc7c-3094-47e0-8dd4-ed597afd9d8f",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S17-5-2c0221de-6bfb-459b-8dfa-5bf298542eb1",
+        "scenarioId": "S17",
+        "repeatIndex": 5,
+        "attribution": "access_associated",
+        "asymmetricRunId": "08d54289-9965-492e-b649-e06d11e5d1db",
+        "fullInformationRunId": "a2b820d7-2755-4e55-9465-9dd6b1f70bbc",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S18-5-a2e884eb-2399-4c56-86ac-62db8f999dd1",
+        "scenarioId": "S18",
+        "repeatIndex": 5,
+        "attribution": "no_decision_disagreement",
+        "asymmetricRunId": "4f49a331-f50e-4b7e-bbce-bf239224db19",
+        "fullInformationRunId": "05a344ea-84c5-4fcb-93d8-2fbfe8ec8c65",
+        "asymmetricConflictType": "none",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S19-5-af6e0c6e-b712-4512-9c28-376554f5e45f",
+        "scenarioId": "S19",
+        "repeatIndex": 5,
+        "attribution": "access_associated",
+        "asymmetricRunId": "57901d7f-0667-4e4f-815e-bbb46eafa3ec",
+        "fullInformationRunId": "517afbff-cda6-4322-bea5-f1d13966b761",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      },
+      {
+        "pairId": "pair-S20-5-e7513368-3965-44f9-a09f-60f45d5d4a78",
+        "scenarioId": "S20",
+        "repeatIndex": 5,
+        "attribution": "access_associated",
+        "asymmetricRunId": "909d7adc-5e34-42d0-93a2-a6085288d4d4",
+        "fullInformationRunId": "1245fbc4-72b4-4491-9c79-ab644f1b1ae8",
+        "asymmetricConflictType": "decision_mismatch",
+        "fullInformationConflictType": "none"
+      }
+    ],
+    "strategyComparison": {
+      "eligibility": {
+        "inputRecords": 60,
+        "decisionDisagreements": 21,
+        "excludedRecords": 39,
+        "rule": "Valid initial decision-label disagreements only; condition-only conflicts and operational failures are excluded.",
+        "runIds": [
+          "8b54402a-f682-49e8-89bc-f27526e66b33",
+          "3b94c158-7900-4d69-b4fb-2fd4d456c7b0",
+          "25c9c8c9-72c8-4a02-8946-728559c8b069",
+          "4433cd92-c3ce-4fb0-90ae-eda03bdb44a1",
+          "519dbf9d-aa04-43ba-8977-7b9c83a1084a",
+          "96c18538-3574-4307-ac51-50ad85ac4005",
+          "2df298b2-f7fd-45fb-9ecc-1abb535dcb04",
+          "341c1a61-c34b-4069-a86b-d127c0f084c2",
+          "248929a2-3df9-402f-9a97-001b0ef8afad",
+          "00ed5735-dd84-4622-b7ff-3c6ede34858c",
+          "1c530a2e-5734-4842-ae17-5b159f5cb77a",
+          "5fcc2ef5-1692-4541-bb25-4f80d8a78d26",
+          "286e75d3-fcee-4d77-b8c3-a651675a8bb1",
+          "3635eda0-69fc-41b8-ae9f-e648a5ed6086",
+          "1746b847-45a6-4e8d-aa87-7d4af2a169fb",
+          "93ed7bc6-2c11-449e-a418-e2576f03cdd1",
+          "97e4cc41-155e-4a34-b7af-56b25073d65a",
+          "ab47bfb3-7830-4816-84dc-91ba0e1a99e3",
+          "08d54289-9965-492e-b649-e06d11e5d1db",
+          "57901d7f-0667-4e4f-815e-bbb46eafa3ec",
+          "909d7adc-5e34-42d0-93a2-a6085288d4d4"
+        ]
+      },
+      "strategies": {
+        "arbitrator": {
+          "eligibleDisagreements": 21,
+          "evaluated": 21,
+          "unavailable": 0,
+          "correctDecisions": 20,
+          "policyAccuracy": 0.9523809523809523,
+          "decisiveDecisions": 20,
+          "decisiveCorrect": 20,
+          "decisiveAccuracy": 1,
+          "conservativeEscalations": 1,
+          "conservativeEscalationRate": 0.047619047619047616,
+          "unnecessaryEscalations": 1,
+          "unnecessaryEscalationRate": 0.047619047619047616,
+          "latency": {
+            "totalMs": 145006,
+            "averageMs": 6905.047619047619
+          },
+          "tokenUsage": {
+            "totalTokens": 23550,
+            "averageTokens": 1121.4285714285713
+          }
+        },
+        "customer": {
+          "eligibleDisagreements": 21,
+          "evaluated": 21,
+          "unavailable": 0,
+          "correctDecisions": 0,
+          "policyAccuracy": 0,
+          "decisiveDecisions": 0,
+          "decisiveCorrect": 0,
+          "decisiveAccuracy": null,
+          "conservativeEscalations": 21,
+          "conservativeEscalationRate": 1,
+          "unnecessaryEscalations": 21,
+          "unnecessaryEscalationRate": 1,
+          "latency": {
+            "totalMs": 238193,
+            "averageMs": 11342.52380952381
+          },
+          "tokenUsage": {
+            "totalTokens": 17489,
+            "averageTokens": 832.8095238095239
+          }
+        },
+        "compliance": {
+          "eligibleDisagreements": 21,
+          "evaluated": 21,
+          "unavailable": 0,
+          "correctDecisions": 21,
+          "policyAccuracy": 1,
+          "decisiveDecisions": 21,
+          "decisiveCorrect": 21,
+          "decisiveAccuracy": 1,
+          "conservativeEscalations": 0,
+          "conservativeEscalationRate": 0,
+          "unnecessaryEscalations": 0,
+          "unnecessaryEscalationRate": 0,
+          "latency": {
+            "totalMs": 238193,
+            "averageMs": 11342.52380952381
+          },
+          "tokenUsage": {
+            "totalTokens": 15354,
+            "averageTokens": 731.1428571428571
+          }
+        },
+        "conservative_escalation": {
+          "eligibleDisagreements": 21,
+          "evaluated": 21,
+          "unavailable": 0,
+          "correctDecisions": 0,
+          "policyAccuracy": 0,
+          "decisiveDecisions": 0,
+          "decisiveCorrect": 0,
+          "decisiveAccuracy": null,
+          "conservativeEscalations": 21,
+          "conservativeEscalationRate": 1,
+          "unnecessaryEscalations": 21,
+          "unnecessaryEscalationRate": 1,
+          "latency": {
+            "totalMs": 0,
+            "averageMs": 0
+          },
+          "tokenUsage": {
+            "totalTokens": 0,
+            "averageTokens": 0
+          }
+        }
+      }
+    },
+    "interpretation": "Access-associated means the observed decision disagreement appeared under different information access and disappeared in the full-information control; it is not evidence of reasoning failure."
+  },
+  "limitations": [
+    "Mock provenance is a deterministic demonstration and is not a live model finding.",
+    "Live results describe only the observed API calls and do not establish statistical significance.",
+    "Arbitrator accuracy is conditional on successful arbitration calls; conservative escalation is reported separately from a correct policy decision.",
+    "The deterministic policy verifier remains the final authority and no real refund is executed.",
+    "Five repeats per scenario are useful for exploration but insufficient for strong statistical claims."
+  ]
+}

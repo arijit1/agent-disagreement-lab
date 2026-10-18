@@ -1,0 +1,22 @@
+{
+  "name": "agent-disagreement-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A policy-verified multi-agent decision and arbitration evaluation in Node.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "demo": "node src/cli/main.js"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "openai": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.11"
+  }
+}
