@@ -93,6 +93,118 @@ Run one scenario:
 npm run demo -- --scenario S2
 ```
 
+## Run the project: scenarios and suites
+
+### 1. Install and verify the project
+
+```bash
+npm install
+npm test
+```
+
+The tests use deterministic fixtures and a fake OpenAI client. They do not make network requests or require an API key.
+
+### 2. Run the default mock demonstration
+
+```bash
+npm run demo
+```
+
+This runs S1–S14 once in deterministic mock mode. The terminal output and exported records are labeled `mock_demonstration`, so they cannot be mistaken for live model findings.
+
+### 3. Run one scenario
+
+Pass any scenario ID with `--scenario`:
+
+```bash
+npm run demo -- --scenario S1
+npm run demo -- --scenario S5
+npm run demo -- --scenario S12
+```
+
+Use the catalog below to choose a case.
+
+| Scenario | Purpose | Expected policy verdict |
+| --- | --- | --- |
+| S1 | Clear in-window eligible request | `APPROVE` |
+| S2 | Late reported delivery issue with missing evidence | `ESCALATE` |
+| S3 | Verified late delivery exception | `APPROVE` |
+| S4 | Clearly ineligible late request | `REJECT` |
+| S5 | Incorrect agent consensus overridden by policy | `ESCALATE` |
+| S6 | Incorrect arbitrator recommendation overridden by policy | `ESCALATE` |
+| S7 | In-window request with unknown standard conditions | `ESCALATE` |
+| S8 | Initial agent timeout that fails closed | `ESCALATE` |
+| S9 | Inclusive day-30 boundary | `APPROVE` |
+| S10 | Uploaded but unverified late evidence | `ESCALATE` |
+| S11 | In-window inspection still pending | `ESCALATE` |
+| S12 | Recent replacement mentioned for an old, non-qualifying purchase | `REJECT` |
+| S13 | Verified evidence of a non-qualifying cause | `REJECT` |
+| S14 | In-window eligibility with irrelevant unresolved delivery facts | `APPROVE` |
+| S15 | Persuasive late claim with an explicit non-qualifying determination | `REJECT` |
+| S16 | Late qualifying issue with unverified evidence | `ESCALATE` |
+| S17 | In-window eligibility with distracting delivery details | `APPROVE` |
+| S18 | Positive in-window claim with unknown standard conditions | `ESCALATE` |
+| S19 | Old purchase, recent replacement, and no qualifying issue | `REJECT` |
+| S20 | Verified qualifying late issue | `APPROVE` |
+
+An individual `--scenario` run evaluates one case normally. To test S15–S20 with paired asymmetric and full-information arms, use the information-view suite instead.
+
+### 4. Run the disagreement challenge
+
+```bash
+npm run demo -- --suite disagreement
+```
+
+This selects S9–S14. Repeat every selected scenario with `--runs`:
+
+```bash
+npm run demo -- --suite disagreement --runs 5
+```
+
+### 5. Run the paired information-view experiment
+
+```bash
+npm run demo -- --suite information-view --runs 3
+```
+
+This selects S15–S20 and runs two arms for every scenario and repeat:
+
+- `asymmetric`: each agent sees a different truthful subset of request facts;
+- `full_information`: both agents see every canonical request field.
+
+Six scenarios × three repeats × two arms produces 36 records. Use `--runs 5` for 60 records.
+
+### 6. Run live OpenAI evaluations
+
+After configuring `.env` as described below, add `--mode live` to the same commands:
+
+```bash
+npm run demo -- --mode live --scenario S2
+npm run demo -- --mode live --suite disagreement --runs 5
+npm run demo -- --mode live --suite information-view --runs 5
+```
+
+Mock and live records must be kept in separate result files. Only actual API executions are labeled `live_evaluation`.
+
+### 7. Choose output files
+
+```bash
+npm run demo -- --scenario S2 \
+  --output outputs/s2-audit.jsonl \
+  --results outputs/s2-results.json \
+  --report outputs/s2-report.json
+```
+
+Use CSV for collaborator analysis:
+
+```bash
+npm run demo -- --scenario S2 \
+  --results outputs/s2-results.csv \
+  --format csv
+```
+
+The audit file is append-only. Use new paths for separate experiments to avoid mixing runs.
+
 ## Optional OpenAI evaluation
 
 Create a local environment file:

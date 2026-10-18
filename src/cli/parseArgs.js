@@ -11,7 +11,7 @@ export const USAGE = `Usage:
 
 Options:
   --mode mock|live       Execution mode (default: mock)
-  --scenario S1..S14     Run one scenario (default: all)
+  --scenario S1..S20     Run one scenario (default: all baseline and disagreement scenarios)
   --suite NAME           Run disagreement or paired information-view scenarios
   --runs N               Repeat each selected scenario N times
   --output PATH          Append JSONL audit records
